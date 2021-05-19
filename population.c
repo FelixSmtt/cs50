@@ -7,11 +7,15 @@ int main(void)
     long nstart;
     long nend;
     
+    // TODO: Prompt for start size
+    
     do
     {
         nstart = get_long("Start size: "); //prompt for starting population
     }
     while(nstart < 9);
+    
+    // TODO: Prompt for end size
     
     do
     {
@@ -19,19 +23,15 @@ int main(void)
     }
     while(nend < nstart);
     
+    // TODO: Calculate number of years until we reach threshold
+    
     while(nstart < nend)
     {
         years++;
         nstart = nstart + nstart / 3 - nstart / 4;
     }
     
-    printf("Years: %li", years);
-    
-    // TODO: Prompt for start size
-
-    // TODO: Prompt for end size
-
-    // TODO: Calculate number of years until we reach threshold
-
     // TODO: Print number of years
+    
+    printf("Years: %li", years);
 }
