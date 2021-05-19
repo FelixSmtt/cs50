@@ -9,13 +9,13 @@ int main(void)
     
     do
     {
-        nstart = get_long("starting population Size? (min. 9)"); //prompt for starting population
+        nstart = get_long("Start size: "); //prompt for starting population
     }
     while(nstart < 9);
     
     do
     {
-        nend = get_long("ending population size? (min. starting size)"); //prompt for starting population
+        nend = get_long("End size: "); //prompt for starting population
     }
     while(nend < nstart);
     
@@ -25,7 +25,7 @@ int main(void)
         nstart = nstart + nstart / 3 - nstart / 4;
     }
     
-    printf("%li", years);
+    printf("Years. %li", years);
     
     // TODO: Prompt for start size
 
