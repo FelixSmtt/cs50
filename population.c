@@ -25,7 +25,7 @@ int main(void)
         nstart = nstart + nstart / 3 - nstart / 4;
     }
     
-    printf("Years. %li", years);
+    printf("Years: %li", years);
     
     // TODO: Prompt for start size
 
