@@ -11,7 +11,7 @@ int main(void)
     }
     while (h < 1 || h > 8);
     
-    printf("Stored: %li\n", h);
+    //printf("Stored: %li\n", h);
     
     for (int y = 1; y <= h; y++)
     {
