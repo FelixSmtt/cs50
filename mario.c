@@ -30,7 +30,7 @@ int main(void)
         
         //Print Spacing
         
-        printf(" ");
+        printf("  ");
         
         //Print Right-Aligned Pyramid
         
