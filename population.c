@@ -13,7 +13,7 @@ int main(void)
     {
         nstart = get_long("Start size: "); //prompt for starting population
     }
-    while(nstart < 9);
+    while (nstart < 9);
     
     // TODO: Prompt for end size
     
@@ -21,11 +21,11 @@ int main(void)
     {
         nend = get_long("End size: "); //prompt for starting population
     }
-    while(nend < nstart);
+    while (nend < nstart);
     
     // TODO: Calculate number of years until we reach threshold
     
-    while(nstart < nend)
+    while (nstart < nend)
     {
         years++;
         nstart = nstart + nstart / 3 - nstart / 4;
